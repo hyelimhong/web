@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+    <style>
+        .info {background: pink; border-color: yellow;}
+      
+        td {color: blue;}
+        #finish {background: yellow;}
+        
+        a{ text-decoration: none; color: red;}
+        a:hover {text-decoration: underline; color: navy}
+
+
+
+    </style>
+    
+</head>
+<body>
+    <table border="1"  >
+        <tr align="center" >
+
+            <td class="title" style="color:black; background: green;">항목</td>
+            <td class="title"  style="color:black; background: green;">입력</td>
+
+        </tr>
+
+        <tr align="center">
+
+            <td>번호</td>
+            <td ><input type="text" name="number" class="info"></td>
+            
+        </tr>
+        <tr align="center">
+
+            <td>제목</td>
+            <td><input type="text" name="title" class="info"></td>
+            
+        </tr>
+        <tr align="center">
+
+            <td>내용</td>
+            <td><input type="text" name="content" class="info"></td>
+            
+        </tr>
+        <tr align="center" >
+
+            <td>작성자</td>
+            <td><input type="text" name="writer" class="info"></td>
+            
+        </tr>
+        <tr align="center">
+
+            <td colspan="4" id="finish">
+                
+                <button> 글쓰기완료. </button>  
+            </td>
+            
+            
+        </tr>
+
+
+    </table>
+</body>
+</html>

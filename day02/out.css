@@ -1,0 +1,6 @@
+body {
+    /*  속성명 : 속성값; */
+    background: lightblue;
+    color: navy;
+    /* body라는 태그를 만나면 배경은 빨강 글자색은 파랑으로 해라 */
+}
