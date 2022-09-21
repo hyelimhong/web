@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div { font-size: 15;
+        font-weight: bold; color: black;
+    }
+    #total {width: 600px; background: pink; height: 800px;}
+
+    #top {width: 561px; height: 100px; background: lightslategray; padding: 20px;}
+    
+    #center {width: 561px; height: 500px; background: lightslategray; padding: 20px;}
+
+   
+        li { list-style: none;
+            float: left;
+            padding: 15px; width: 70px height 20px;
+            /* border-radius: 50px; */
+          
+
+        }
+        
+        /* li가 ul의 자식 몇번째인지 지정 */
+        li:nth-child(2n) { background: lightblue
+            ;}
+        li:nth-child(2n+1){background: lightcoral;}
+        li:first-child {border-radius: 50px 0 0 50px;}
+        li:last-child {border-radius: 0 50px 50px 0;}
+
+        #top2{background: black; color: yellow;
+        border-radius:  100px 10px; width: 250px; height: 100px;
+    position: fixed; top:5px; right: 5px;} 
+    
+    </style>
+</head>
+<body>
+    <div id="total">
+        <div id="top">
+            <ul>
+                <li>
+                    <a href="member.html"> 회원가입 </a>
+                
+                </li> 
+                <li>
+                <a href="product.html">제품정보</a>
+
+                </li>
+        
+                <li>
+                    <a href="bbs.html">게시판</a>
+
+                </li>
+                <li>
+                    <a href="basket.html">장바구니</a>
+
+                 </li>
+            </ul>
+        </div>
+        <div id="top2">장바구니</div>
+        <div id="center">장바구니 리스트</div>
+    </div>
+</body>
+</html>

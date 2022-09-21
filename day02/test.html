@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="test.css">
     <style>
         .info {background: pink; border-color: yellow;}
+        /* input{background : pink} */
       
         td {color: blue;}
         #finish {background: yellow;}
         
         a{ text-decoration: none; color: red;}
-        a:hover {text-decoration: underline; color: navy}
+        td :hover {background: lemonchiffon;}
 
 
 
@@ -21,9 +22,10 @@
     
 </head>
 <body>
+    <form>
     <table border="1"  >
         <tr align="center" >
-
+            <!-- style은 딱 하나만 바꾸고 싶을 때 -->
             <td class="title" style="color:black; background: green;">항목</td>
             <td class="title"  style="color:black; background: green;">입력</td>
 
@@ -55,9 +57,10 @@
         </tr>
         <tr align="center">
 
-            <td colspan="4" id="finish">
+            <td colspan="2" id="finish">
                 
                 <button> 글쓰기완료. </button>  
+                <!-- text-align : center -->
             </td>
             
             
@@ -65,5 +68,6 @@
 
 
     </table>
+    </form>
 </body>
 </html>
