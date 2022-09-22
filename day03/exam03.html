@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function payment() {
+            method = document.getElementById("method").value  
+            store = document.getElementById("store").value
+            price = document.getElementById("price").value
+            price = parseInt(price)
+            
+            if (method == 1) {
+                result = price
+            } else if (method == 2){
+                result = price + 1000
+                
+            }
+            else { result = price + 500}
+            alert(result)
+        }
+
+
+
+
+    </script>
+</head>
+<body>
+
+    <hr style="border: 30px;">
+    구매상점 : <input type="text" id="store"> <br>
+    결제금액 : <input type="text" id="price"> <br>
+    입력수단(1)계좌이체 2)신용카드 3)휴대폰결제: <br>
+     <input type="text" id="method">
+    <br>
+     <button onclick="payment()">결제 버튼</button>
+<hr style="border: 30px">
+</body>
+<div id="d1" ></div>
+</html>
