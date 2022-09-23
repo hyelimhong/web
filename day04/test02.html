@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+            $('#b1').click(function () {
+                 price = $('#price').val()
+                 method = $('#method').val()
+                
+                if (method = '계좌이체') {
+                    $('#d1').append(price * 0.8)
+                } else if (method = '신용카드'){
+                    $('#d1').append(price * 0.9)
+                } else  {
+                    $('#d1').append(price)
+                }
+            })
+            
+        })
+
+        $(function () {
+            $('#b2').click(function () {
+                id = $('#id').val()
+                if ( id == "apple") {
+                    $('#d1').append('중복된 id')
+                } else {
+                    $('#d1').append('사용가능 id')
+                }
+            })
+            
+        })
+
+    </script>
+</head>
+<body>
+    
+    결제금액: <input type="text" id="price"> <br>
+   
+    1)계좌이체 2)신용카드 3)휴대폰결제 <br>
+    결제수단: <input type="text" id="method"><button id="b1">결제하기</button> <br>
+    <hr>
+    회원가입할 ID: <input type="text" id="id"><button id="b2">id중복체크</button> <br>
+    <hr>
+    인증받을 전화번호 : <input type="text" id="tel"> <button id="b3">인증번호받기</button><br>
+    <hr>
+    <div id="d1"></div>
+
+</body>
+</html>
